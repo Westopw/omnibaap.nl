@@ -3,6 +3,7 @@
     "name": "Omnibaap",
     "description": "Omnibaap",
     "manifest_version": "0.1",
+
     "icons": [
       {
         "src": "favicon.ico",
@@ -16,6 +17,22 @@
         "purpose": "any"
       }
     ],
+
+    "screenshots": [
+      {
+        "src": "screenshots/screenshotweb.png",
+        "sizes": "3344x1580",
+        "type": "image/png",
+        "form_factor": "wide"
+      },
+      {
+        "src": "screenshots/screenshotmobile.png",
+        "sizes": "752x1332",
+        "type": "image/png",
+        "platform": "mobile"
+    }
+],
+
     "start_url": "../index.html",
 
     "display_override": ["fullscreen", "standalone"],
