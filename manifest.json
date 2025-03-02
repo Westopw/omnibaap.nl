@@ -36,7 +36,7 @@
     "start_url": "../index.html",
 
     "display_override": ["fullscreen", "standalone"],
-    "display": "standalone",
+    "display": "fullscreen",
 
     "theme_color": "rgb(88, 129, 87)"
 }
