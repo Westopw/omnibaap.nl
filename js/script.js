@@ -124,7 +124,7 @@ var difficulty = 2;
 //default = 5
 var loglength = 5;
 //version
-var version = "v3.0_2025";
+var version = "v3.0.1_2025";
 
 $("#signature").append(version);
 

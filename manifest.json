@@ -1,0 +1,16 @@
+{
+    "short_name": "Omnibaap",
+    "name": "Omnibaap",
+    "icons": [
+      {
+        "src": "/images/wl.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      }
+    ],
+
+    "display_override": ["fullscreen", "standalone"],
+    "display": "standalone",
+
+    "theme_color": "rgb(88, 129, 87)"
+}
