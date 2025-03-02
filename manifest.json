@@ -1,12 +1,14 @@
 {
     "short_name": "Omnibaap",
     "name": "Omnibaap",
+    "description": "Omnibaap",
+    "manifest_version": "0.1",
     "icons": [
       {
-        "src": "/images/wl.png",
+        "src": "/images/icon.png",
         "type": "image/png",
         "sizes": "144x144",
-        "purpose": "any maskable"
+        "purpose": "any"
       }
     ],
     "start_url": "../index.html",
