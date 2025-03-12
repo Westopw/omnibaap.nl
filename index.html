@@ -4,16 +4,20 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4473TM458G"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-4473TM458G');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4473TM458G');
     </script>
-    
+
+    <!-- Icon library -->
+    <link href="/assets/css/all.css" rel="stylesheet" />
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Omnibaap</title>
 
     <link rel=stylesheet href='css/style.css'>
     <script src="https://unpkg.com/jquery"></script>
@@ -31,26 +35,23 @@
             <div id="ham3"></div>
         </div>
 
-        <div id="helpbutton"></div>
+        <div id="modebutton"></div>
 
     </header>
 
     <main>
         <div id="options">
-
-            <div id="difficultyoptions">
-                <p id="askdifficulty">Niveau</p>
-                <div id="difbuttons">
-                    <div id="0" class="difbutton" onClick="reply_clicked(this.id)">Easy</div>
-                    <div id="1" class="difbutton" onClick="reply_clicked(this.id)">Hard</div>
-                    <div id="2" class="difbutton" onClick="reply_clicked(this.id)">All</div>
-                </div>
+            <div id="modulebuttons">
+                <div class="modulebutton" id="basics"><span><i class="fa-regular fa-circle"></i><br>Basics</span></i></div>
+                <div class="modulebutton" id="woorden"><span><i class="fa-regular fa-comments"></i><br>Woorden</span></div>
+                <div class="modulebutton" id="plekken"><span><i class="fa-solid fa-location-dot"></i><br>Plekken</span></div>
+                <div class="modulebutton" id="personen"><span><i class="fa-regular fa-address-card"></i><br>Personen</span></div>
+                <div class="modulebutton" id="dingen"><span><i class="fa-solid fa-lightbulb"></i><br>Dingen</span></div>
+                <div class="modulebutton" id="gerelateerd"><span><i class="fa-solid fa-magnifying-glass"></i><br>... Gerelateerd</span></div>
+                <div class="modulebutton" id="jonko"><span><i class="fa-brands fa-canadian-maple-leaf"></i><br>Jonko</span></div>
+                <div class="modulebutton" id="cleopatra"><span><i class="fa-solid fa-ankh"></i><br>Cleopatra</span></div>
+                <!--Nieuwe modules kunnen hier gewoon onder gepaste worden-->
             </div>
-
-            <div id="addonoptions">
-                <p id="askaddon">Add-ons</p>
-            <div id="cleopatrabutton" class="difbutton" style="background-color: rgb(58, 90, 64); border: medium; margin-top: 2.22vh;">Cleopatra</div>
-        </div>
         </div>
 
         <p id="prompt"></p>
@@ -58,13 +59,13 @@
 
         <div id="gradient"></div>
         <div id="whiteblock"></div>
-        <div id="button" id="white">
+        <div id="button" mode="white">
             <p>Start</p>
         </div>
     </main>
 
     <footer>
-        <p id="signature">Westo Bon <br/> </p>
+        <p id="signature">Westo <br/> </p>
     </footer>
     
 </body>

@@ -1,0 +1,10 @@
+In deze versie wil ik het nieuwe modules / keuzemenu bouwen
+Doe functie en geef de gekozen modules als waarden mee? Elke keer de functie opnieuw runnen voor ieder individuele module aan de array toevoegen
+GELUKT INCL LOCALSTORAGE ALGORITME
+
+ik wil ook darkmode proberen om te zetten naar css of een andere functie. Doel is dat het 1 line is bij knopklik (misschien function gelijktrekken?)
+GELUKT
+
+"refresh" knop
+
+font kiezen
