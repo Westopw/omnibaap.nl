@@ -108,6 +108,16 @@ header{
     bottom: 3.5vh;
 }
 
+.modulebutton span span{
+    bottom: -2vh;
+    font-size: 9px;
+}
+
+.modulebutton.active span span{
+    bottom: -2vh;
+    font-size: 9px;
+}
+
 #prompt{
     text-align: center;
     color: black;

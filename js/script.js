@@ -4,146 +4,135 @@ var basics =
     "Flora", "Waarvan je in het ziekenhuis beland als het vanaf twee verdiepingen op je land", "Vakantiebestemmingen", 
     "Winkels", "Ik ga op vakantie en ik bezoek ...", "Alles", 
     "Alles voor 1 euro", "Alles voor 10 euro", "Wat je 10 meter ver kan gooien",
-    "Beroepen", "Scheldwoorden",
-];
+    "Beroepen", "Scheldwoorden", "Bedrijfsmotto's", 
+    'Bestaande of nieuwe omnibaap spel categoriën', 
+    'Boeken', 'Dingen harder dan een baksteen', 'Muzieknummers', 
+    'Trends voor 13-jarigen', 'Dranken', 'Videogames', 
+    'Plekken', 'Elke chillsessie ooit', 'Wat jou 10 meter ver kan gooien', 
+    'Wat je over je vriendin kan zeggen maar niet over je auto', 'Dingen die je met je moeder zou doen', 'Wat je over je auto kan zeggen maar niet over je vriendin', 
+    'Wat mogelijk is na de dood', 'Kookgerei', 'Het eerste waar je aan denkt', 
+    'Alles zonder Herman', 'Waar een kind in kan stikken', 'Talen en dialecten', 'Luxeproducten', 'Red flags', 
+    'Dingen die je niet ziet aankomen', 'Alles met Herman', 'Groentes', 
+    'Wat je kan eten', 'Fruit', 'Schoolvakken', 
+    'Kunststromingen', 'Lichaamsdelen', 'Wat je in een kluis zou stoppen', 
+    'Dingen die kut zijn', 'Redenen om met iemand naar bed te gaan', 'Eén van je drie magische wensen', 
+    'Het beste idee van Nederland', 'Complottheoriën', 'Lichamelijke aandoeningen', 
+    'Dingen in een donkere steeg', 'Culturen', 'Absoluut het geld waard', 
+    'Moordwapens', 'Kantoorartikelen', 'Waar je dood aan kan gaan',
+    "Dingen om een joint mee aan te steken", 'Dingen die je kunt roken',
+    'Het laatste wat je doet', 'Politieke partijen', 'Alcoholische dranken', 
+    'Nostalgie', 'Goede doelen', 'Fetishes', 
+    'Kinks', 'Dingen die je op je reis mee terug zou nemen', 'Subculturen'];
 
 var woorden =
-["Iets wat rijmt op het vorige woord"];
+["Iets wat rijmt op het vorige woord", 'Engelse woorden, >=8 letters', 'Synoniemen voor geld', 
+    'Getallen', 'Namen voor een dating-app', "Afko's", 
+    'Woorden die al gezegd zijn', 'Werkwoorden', 'Onomatopeeën', 
+    'Synoniemen voor bier', 'Een naam voor een IKEA-meubel', 'Voorzetsels', 
+    'Engelse woorden', 'Afkortingen', 'Palindroom', 
+    'Kleuren', 'Woorden om een kunstwerk mee te beschrijven'];
 
 var plekken =
-["Plekken om te slapen"];
+["Plekken om te slapen", 'Waterlichamen', 'Oppervlaktes', 
+    'Plekken om te wonen', 'Plekken om seks te hebben', 'Dingen waar je in kan wonen', 
+    'Gebouwen', 'Plekken om je peuken te bewaren', 'Plekken om je wiet te bewaren', 
+    'Plekken om te zitten'];
 
 var personen =
-["Wetenschappers"];
+["Wetenschappers", 'Kunstenaars', 'Voornamen', 
+    'De ideale schoonzoon', 'Genderloze voornamen', 'Beroemde mensen', 
+    'Namen voor een street gang', 'Achternamen', 'Vrouwennamen', 
+    'Criminelen', 'Dikke mensen', 'Mannennamen', 
+    'Namen voor knuffeldieren', 'Leiderschapskwaliteiten'];
 
 var dingen =
 ["Wat in je broekzak past", "Wat je in de supermarkt kan tegenkomen", "Dingen die je kan stelen als je dronken bent", 
     "Dingen die vet relaxt zijn", "Dingen die je niet in een vliegtuig mee kan nemen", "Dingen die je graag zou willen hebben",
     "Dingen die trillen", "Dingen zachter dan veren", "Dingen die zwaar zijn", 
-    "Dingen die licht zijn", "Dingen die je niet in de magnetron kan stoppen"
-];
+    "Dingen die licht zijn", 'Electronica', 'Decoraties', 
+    'Meubels', 'Dingen die je wilt hebben', 'Organen', 
+    'Dingen die je kan stelen', 'Dingen die je kan begraven', 'Knoppen op een rekenmachine', 
+    'Alles dat niet bestaat', 'Speelgoed', 'Bouwmaterialen', 
+    'Dingen met toetsen en knoppen', 'Dingen die drijven', 'Sekstoys', 
+    'Dingen om mee te schrijven', 'Dingen die geluid maken', 'Dingen die glibberig zijn', 
+    'Dingen die heel groot zijn', 'Dingen die je lichaam ingaan', 'Dingen die je lichaam uitkomen', 
+    'Dingen die niet in een lift passen', 'Dingen die sus zijn', 'Dingen om voor te bedelen', 
+    'Dingen om weg te gooien', 'Dingen uit de jaren 80', 'Dingen waar Adam Eva van had kunnen maken', 
+    'Dingen waar je een tattoo van zou willen hebben', 'Wietsoorten', 'Muziekinstrumenten', 
+    'Dingen die vliegen', 'Wat je niet kan eten', 'Snacks', 
+    'Kledingstukken'];
 
 var gerelateerd =
 ["Wetenschappelijk gerelateerd", "Oorlogsgerelateerd",
     "Godsdienst gerelateerd", "Sport gerelateerd", "Jouw werk/studie gerelateerd",
     "Game gerelateerd", "Kunst gerelateerd", "Seks gerelateerd",
     "Drugs gerelateerd", "Ruimtevaart gerelateerd", "Politiek gerelateerd",
-    "Kerst gerelateerd", "Halloween gerelateerd"
+    "Kerst gerelateerd", "Halloween gerelateerd"];
 
-];
+var nieuws =
+['Een nieuwe titel voor een wetenschappelijk artikel', 'Het onderwerp van je elevator pitch', 'Dingen om muzieknummers over te schrijven', 
+    'Namen voor een nieuw product', 'Een nieuw muziekgenre', 'One sentence horror story', 
+    'Een nieuwe uitvinding', 'Dingen om met een miljoen te doen'];
 
-var jonko =
-["Dingen die je op 20 april zou doen", "Dingen om een joint mee aan te steken"];
-
-var cleopatra = ["Dingen om in de BoBa te doen", "Dingen om in de BeBa te doen", "Dingen om in de TuBa te doen", 
+var cleopatra = 
+["Dingen om in de BoBa te doen", "Dingen om in de BeBa te doen", "Dingen om in de TuBa te doen", 
     "Redenen om bestuur te worden", "Boten", "Stammen",
     "BeBa-hitjes", "Cleopatra gerelateerd", "Dingen die je met veilingitems kan doen",
     "Cleopatranen", "Groningse uitgaansgelegenheden", "Verenigingen", 
     "Thema's voor feesten", "Objecten om een klefemmer mee te geven", "BeBa-nummers waar je nu onderhand wel een beetje klaar mee bent",
     "Dingen om tijdens een NICO te koken", "Manieren om 'kapitein' te zeggen", "Namen voor een boot",
-    "Namen voor een stam", "Dingen om op bootkamp te doen"
-    ];
+    "Namen voor een stam", "Dingen om op bootkamp te doen", 'Dingen waar je vloeistof in kan doen'];
 
-var easy = [, "Pokemon", 
- 
-            , "Dingen die je lichaam ingaan", "Waar een kind in kan stikken", 
-            "Wat in je koelkast past", "Moordwapens",  "Engelse woorden", 
-            , "Waar je problemen mee krijgt bij de douane", "Waar je dood aan kan gaan", 
-            "Ik ga op reis en ik neem mee ...", "Alles dat niet bestaat", , "Muzieknummers", 
-            "Voertuigen", "Verzamelobjecten", , 
-            , , "Alles waarvoor je gestraft wordt", 
-            , , , 
-            
-            "Wat je niet in je ouder's slaapkamer wilt vinden", "Dingen die kut zijn", "Dingen die je met je moeder zou doen", 
-            , "Wat je kan eten", "Wat je niet kan eten", 
-            "Ziektes", , , 
-            , ,  , "Dingen die je met je baby zou doen", 
-            "Dingen harder dan een baksteen", , "Het eerste waar je aan denkt", 
-            "Bestaande of nieuwe omnibaap spel categoriën", "Dingen die vliegen", "Speelgoed", 
-            , , "Dingen die je kan drinken",
-            "Groentes", "Fruit", , 
-            , "Luxeproducten", "Dingen om met een miljoen te doen", 
-            "Plekken om je wiet te bewaren", "Plekken om seks te hebben", "Dingen die drijven", 
-            "Boeken", "Catchphrases", "Culturen", 
-            "Steden", "Plekken", "Monsters", 
-            "Antagonisten", "Protagonisten", "Bouwmaterialen", 
-            "Dingen die geluid maken", "Voornamen", "Achternamen", 
-            "Electronica", "Stripfiguren", 
-            "Kantoorartikelen", "Oppervlaktes", "Memes", 
-            "Synoniemen voor 'joint'", "Woorden die al gezegd zijn", "Dingen die je in het stopcontact steekt", 
-            "Plekken om te zitten", "Lichaamsdelen", "Nostalgie", 
-            "Dingen die sus zijn", "Meubels", "Dingen om muzieknummers over te schrijven", 
-            "Decoraties", "Dingen die je niet ziet aankomen", "Fetishes", 
-            "Waarvan je in het ziekenhuis beland", "Snacks", "Dingen die je aan kan zetten",
-            "Snoepgoed", "Musicals", "Dingen die je uit kan zetten",
-            "Software", "Videogames", "Dingen om op te schrijven",
-            "Dingen om mee te schrijven", "Manieren om met moord weg te komen", "Redenen om op vakantie te gaan",
-            "Redenen om te protesteren", "Opleidingen", "Het beste idee van Nederland",
-            "Nummers om karaoke op te zingen", "Dromen", "Wapens voor tijdens een zombie apocalypse",
-            "Simon says...", "Beroemde mensen", "Lichamelijke aandoeningen",
-            "Openingszinnen", "Een nieuwe titel voor een boek", "Een nieuwe titel voor een muzieknummer",
-            "Een nieuwe uitvinding", "Namen voor een dating-app", "Dingen die heel klein zijn",
-            "Dingen die heel groot zijn", "Dingen die heel medium zijn", "Vrouwennamen",
-            "Mannennamen", "Genderloze voornamen", "Historische gebeurtenissen",
-            "Dingen om voor te bedelen", "Woorden om een kunstwerk mee te beschrijven", "Dingen waar je alles voor zou doen",
-            "Dingen waar je niets voor zou doen", "Dingen die je kan begraven", "Dingen met toetsen en knoppen",
-            "Plekken om je peuken te bewaren", "Dingen die je in de magnetron kan stoppen", "Dingen om in Minecraft te bouwen",
-            "Goede geuren voor een kaars", "Slechte geuren voor een kaars", "Dingen die je op je reis mee terug zou nemen",
-            "Dingen waar je vloeistof in kan doen", "Dingen om te doen tijdens het poepen", "Kinks",
-            , "Smokkelwaar", "Welkom bij mijn TED-talk over ...",
-            "Het laatste wat je doet", "Dingen die je kan stelen", "Dingen om naar iemand te gooien",
-            "Dingen om weg te gooien", "Dingen die je wilt hebben", "Absoluut het geld waard",
-            "Absoluut niet het geld waard", "Plekken om te wonen", 
-        ];
+var media =
+["Pokemon", 'Antagonisten', 'Filmgenres', 
+    'Games die veel beter zouden zijn in VR', 'Protagonisten', 'Theatervoorstellingen', 
+    'Stripfiguren', 'Mythologische wezens', 'Musicals', 
+    'Binge-waardige shows', 'Bordspellen', 'Waar je een film over zou kunnen maken', 
+    'Personages waar je een masker van wilt hebben', 'Muzieknummers met een niet-Engelse titel', 'Catchphrases', 
+    'Dingen om in Minecraft te bouwen', 'Monsters', 'Memes', 
+    'Consoles'];
 
-var hard = ["Wat je niet aan kan raken", "Wat je in een kluis zou stoppen", "Wat mogelijk is na de dood", 
-            "Wat je niet kan zien", "Werkwoorden", "Dingen in een donkere steeg", 
-            "Muziekinstrumenten", "Trends voor 13-jarigen", "Wat jou 10 meter ver kan gooien", 
-            "Woordgrappen", "Afkortingen", "Wat je over je auto kan zeggen maar niet over je vriendin", 
-            "Palindroom", "Alles zonder Herman", "Een nieuw muziekgenre", 
-            "Kledingstukken",  "Engelse woorden, >=8 letters", "Onomatopeeën", 
-            "Schoonheidsproducten", "Seksstandjes", "Complottheoriën", 
-            "Ontbijt", "Kunststromingen", "Filmgenres",
-            "Kleuren", "Getallen", , 
-            "Kunstenaars", "Mythologische wezens", "Elke chillsessie ooit", 
-            "Bedrijfsmotto's", "Politieke partijen", "Goede doelen", 
-            "Toverspreuken", "Dingen die geen geluid maken", "Begroetingen", 
-            "Wereldleiders", "Wietsoorten", "Gebouwen", 
-            "Straatnamen", "Bordspellen", "Voorzetsels", 
-            "Dissen", "Organen", "Alles met Herman", 
-            "Feestdagen", 
-            "Nachtmerries", "Schoonmaakproducten", "Wat je over je vriendin kan zeggen maar niet over je auto", 
-            "Theesmaken", "Dingen die je kunt roken", "Kookgerei", 
-            "Alcoholische dranken", "Theatervoorstellingen", "Consoles",
-            "Nieuwjaarsvoornemens", "Recepten", "Sekstoys",
-            "Dingen uit de jaren 80", "Schoolvakken", "Eén van je drie magische wensen",
-            "Drankspellen", "Inside jokes", "Hollandse feestdagen",
-            "Games die veel beter zouden zijn in VR", "Knoppen op een rekenmachine", 
-            "Maanden in een jaar", "Dranken", "Dingen om een koekje in te dopen",
-            "Waar je een boek over zou kunnen schrijven", "Waar je een film over zou kunnen maken", "Namen voor knuffeldieren",
-            , "Psychische aandoeningen", "Een nieuwe titel voor een wetenschappelijk artikel",
-            "Dingen die je lichaam uitkomen", "Talen en dialecten", "Redenen waarom lucifer uit de hemel is verbannen",
-            "Dingen die niet in een lift passen", "Muzieknummers met een niet-Engelse titel", "Dingen waar je in kan wonen",
-            "Handelingen die door AI vervangen kunnen worden", "De ideale schoonzoon", "Komt een vrouw bij de dokter...",
-            "Komt een man bij de dokter...", "Synoniemen voor geld", "Synoniemen voor bier",
-            "Kijk uit!...", "Verboden te...", "Dingen die je in de kelder kan vinden",
-            "Dingen die in een stopcontact passen", "Dingen met toeters en bellen", "Personages waar je een masker van wilt hebben",
-            "Dingen waar je een tattoo van zou willen hebben", "Waterlichamen", "Weddenschappen",
-            "Dingen waar je verslaafd aan kan raken", "Wie als eerst ..., wint!", "Criminelen",
-            "Leiderschapskwaliteiten", "Afko's", "Dikke mensen",
-            "Street names", "Namen voor een street gang", "Subculturen", 
-            "Dansmoves", "Outfits voor themafeesten", "Redenen om met iemand naar bed te gaan",
-            "Dingen die glibberig zijn", "Red flags", "Green flags",
-            "Wat je absoluut niet op je Tinder hebt willen staan", "Wat je absoluut niet op je LinkedIn wil hebben staan", "Redenen om te daten",
-            "Teleurstellingen", "Aangename verassingen", "One sentence horror story",
-            "Sitcoms", "Binge-waardige shows", "Een naam voor een IKEA-meubel",
-            "Namen voor een nieuw product", "Het onderwerp van je elevator pitch", "Domme manieren om dood te gaan",
-            "Wat je meeneemt naar een onbewoont eiland", "Dingen die je sociaal geaccepteerd mag stelen", "Dingen die niemand boeit",
-            "Dingen waar Adam Eva van had kunnen maken", "Ongemakkelijke situaties", "Kermisattracties",
-            "Pretparkattracties", "Thema's voor een pretpark", "Onhygiënische praktijken",
-            "Hygiënische praktijken", "Dingen waarvan je vind dat jij beter bent dan de rest", "Dingen om te doen tijdens het slaapwandelen",
-            ];
+var zinnen =
+['Welkom bij mijn TED-talk over ...', 'Simon says...', 'Ik ga op reis en ik neem mee ...', 
+    'Komt een man bij de dokter...', 'Verboden te...', 'Wie als eerst ..., wint!', 
+    'Komt een vrouw bij de dokter...', 'Kijk uit!...', 'dissen',
+    'Nieuwjaarsvoornemens', 'Manieren om met moord weg te komen', 'Openingszinnen', 
+    'Dromen', 'Wat je absoluut niet op je LinkedIn wil hebben staan', 'Redenen om op vakantie te gaan', 
+    'Weddenschappen', 'Redenen om te daten', 'Domme manieren om dood te gaan', 
+    'Nachtmerries'];
 
+var activiteiten =
+['Dingen die je met je baby zou doen', 'Dansmoves', 'Redenen om te protesteren', 
+    'Opleidingen', 'Seksstandjes', 'Hollandse feestdagen', 
+    'Dingen om te doen tijdens het slaapwandelen', 'Historische gebeurtenissen', 'Dingen om naar iemand te gooien', 
+    'Feestdagen', 'Drankspellen', 'Nummers om karaoke op te zingen', 
+    'Alles waarvoor je gestraft wordt', 'Dingen die je kan drinken'];
+
+var junk =
+['Dingen die heel medium zijn', 'Dingen die je sociaal geaccepteerd mag stelen', 'Green flags', 
+    'Dingen die je uit kan zetten', 'Dingen om op te schrijven', 'Dingen die je in het stopcontact steekt', 
+    'Dingen die niemand boeit', 'Dingen die je aan kan zetten', 'Dingen om een koekje in te dopen', 
+    'Onhygiënische praktijken', 'Dingen die je in de kelder kan vinden', 'Dingen waar je alles voor zou doen', 
+    'Redenen waarom lucifer uit de hemel is verbannen', 'Aangename verassingen', 'Dingen die geen geluid maken', 
+    'Recepten', 'Slechte geuren voor een kaars', 'Dingen om te doen tijdens het poepen', 
+    'Schoonmaakproducten', 'Dingen waarvan je vind dat jij beter bent dan de rest', 'Inside jokes', 
+    'Dingen die je niet in de magnetron kan stoppen', "Thema's voor een pretpark", 'Dingen met toeters en bellen', 
+    'Schoonheidsproducten', 'Pretparkattracties', 'Psychische aandoeningen', 
+    'Waar je problemen mee krijgt bij de douane', 'Goede geuren voor een kaars', 'Outfits voor themafeesten', 
+    'Dingen waar je verslaafd aan kan raken', 'Dingen waar je niets voor zou doen', 'Maanden in een jaar', 
+    'Handelingen die door AI vervangen kunnen worden', 'Kermisattracties', "Dingen die je op 20 april zou doen",
+    'Smokkelwaar', 'Ongemakkelijke situaties', 'Wapens voor tijdens een zombie apocalypse', 
+    'Ontbijt', 'Absoluut niet het geld waard', 'Dingen die heel klein zijn', 
+    'Absoluut niet het geld waard', 'Hygiënische praktijken'];
+
+//zet getallen neer
+var loadmodulelength;
+for(i = 1; i < ($(".modulebutton").length + 1); i++){
+    loadmodulelength = $(".modulebutton:nth-child(" + i + ")").attr("id");
+    parseFloat(loadmodulelength);
+    loadmodulelength = loadmodulelength.length;
+    $(".modulebutton:nth-child(" + i + ") span span").text(window[$(".modulebutton:nth-child(" + i + ")").attr("id")].length);
+}
 
 var log = [];
 var optionsout = 0;
@@ -164,7 +153,6 @@ for(i = 1; i < ($(".modulebutton").length + 1); i++){
         }
     }
 }
-
 
 loadmodules();
 
@@ -192,7 +180,11 @@ console.log(frequency(playing, playing[k])); }
 
 //zet darkmode klaar (eerst local storage checken)
 if(window.localStorage.getItem("omnibaap_darkmodestorage") != null){
-mode = window.localStorage.getItem("omnibaap_darkmodestorage");}
+    mode = window.localStorage.getItem("omnibaap_darkmodestorage");
+}else if(window.localStorage.getItem("omnibaap_darkmodestorage") == 1 || 0){
+    //forced update localstorage
+    window.localStorage.setItem("omnibaap_darkmodestorage", "light");   
+}
 darkmode(mode);
 
 //als hamburger geklikt
