@@ -180,7 +180,7 @@ console.log(frequency(playing, playing[k])); }
 //zet darkmode klaar (eerst local storage checken)
 if(window.localStorage.getItem("omnibaap_darkmodestorage") != null){
     mode = window.localStorage.getItem("omnibaap_darkmodestorage");
-}else if(window.localStorage.getItem("omnibaap_darkmodestorage") == 1 || window.localStorage.getItem("omnibaap_darkmodestorage") == 0){
+}else if(window.localStorage.getItem("omnibaap_darkmodestorage") == "1" || window.localStorage.getItem("omnibaap_darkmodestorage") == "0"){
     //forced update localstorage
     window.localStorage.setItem("omnibaap_darkmodestorage", "light");   
 }
