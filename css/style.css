@@ -186,12 +186,12 @@ header{
     font-weight: bold;
 }
 
-[mode="white"]:active{
+[mode="light"]:active{
     transition: 0s!important;
     border: 5px solid white;
 }
 
-[mode="black"]:active{
+[mode="dark"]:active{
     transition: 0s!important;
     border: 5px solid black;
 }

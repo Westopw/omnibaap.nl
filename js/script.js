@@ -125,14 +125,7 @@ var junk =
     'Ontbijt', 'Absoluut niet het geld waard', 'Dingen die heel klein zijn', 
     'Absoluut niet het geld waard', 'Hygiënische praktijken'];
 
-//zet getallen neer
-var loadmodulelength;
-for(i = 1; i < ($(".modulebutton").length + 1); i++){
-    loadmodulelength = $(".modulebutton:nth-child(" + i + ")").attr("id");
-    parseFloat(loadmodulelength);
-    loadmodulelength = loadmodulelength.length;
-    $(".modulebutton:nth-child(" + i + ") span span").text(window[$(".modulebutton:nth-child(" + i + ")").attr("id")].length);
-}
+
 
 var log = [];
 var optionsout = 0;
@@ -142,18 +135,29 @@ var mode = "light";
 var add;
 var addstorage = 1;
 
+//zet getallen neer
+var loadmodulelength;
+for(i = 1; i < ($(".modulebutton").length + 1); i++){
+    loadmodulelength = $(".modulebutton:nth-child(" + i + ")").attr("id");
+    parseFloat(loadmodulelength);
+    loadmodulelength = loadmodulelength.length;
+    $(".modulebutton:nth-child(" + i + ") span span").text(window[$(".modulebutton:nth-child(" + i + ")").attr("id")].length);
+}
+
 //activeer modules
 var modules = [];
 
+if(window.localStorage.getItem("omnibaap_module_basics") != "true" || window.localStorage.getItem("omnibaap_module_basics") != "false"){
+    window.localStorage.setItem("omnibaap_module_basics", "true");
+}
 for(i = 1; i < ($(".modulebutton").length + 1); i++){
 
-    if(window.localStorage.getItem("omnibaap_module_" + $(".modulebutton:nth-child(" + i + ")").attr("id")) != null){
-        if(window.localStorage.getItem("omnibaap_module_" + $(".modulebutton:nth-child(" + i + ")").attr("id")) == true){
+    if(window.localStorage.getItem("omnibaap_module_" + $(".modulebutton:nth-child(" + i + ")").attr("id")) == "true" || window.localStorage.getItem("omnibaap_module_" + $(".modulebutton:nth-child(" + i + ")").attr("id")) == "false"){
+        if(window.localStorage.getItem("omnibaap_module_" + $(".modulebutton:nth-child(" + i + ")").attr("id")) == "true"){
             $(".modulebutton:nth-child(" + i + ")").toggleClass("active");
         }
     }
 }
-
 loadmodules();
 
 //default = 5
@@ -178,11 +182,8 @@ console.log(frequency(playing, playing[k])); }
 //'dubbel-checker' uit
 
 //zet darkmode klaar (eerst local storage checken)
-if(window.localStorage.getItem("omnibaap_darkmodestorage") != null){
-    mode = window.localStorage.getItem("omnibaap_darkmodestorage");
-}else if(window.localStorage.getItem("omnibaap_darkmodestorage") == "1" || window.localStorage.getItem("omnibaap_darkmodestorage") == "0"){
-    //forced update localstorage
-    window.localStorage.setItem("omnibaap_darkmodestorage", "light");   
+if(window.localStorage.getItem("omnibaap_modestorage") != null){
+    mode = window.localStorage.getItem("omnibaap_modestorage");
 }
 darkmode(mode);
 
@@ -205,9 +206,9 @@ $("#hamburger").on("click", function () {
         $("#options").css("transform", "translate(-100vw, 0)");
         $("header").css("border-radius", "0 0 42px 42px");
 
-        if(darkmode == 0){
+        if(mode == "light"){
             $("#hamburger div").css("background-color", "white");
-        }else if(darkmode == 1){
+        }else if(mode == "dark"){
             $("#hamburger div").css("background-color", "black");
         }
         optionsout = 0;
@@ -227,20 +228,20 @@ $("#modebutton").on("click", function () {
 
         if(mode == "light"){
 
-            window.localStorage.setItem("omnibaap_darkmodestorage", "dark");
+            window.localStorage.setItem("omnibaap_modestorage", "dark");
             mode = "dark";
             darkmode(mode);
 
         }else if(mode == "dark"){
 
-            window.localStorage.setItem("omnibaap_darkmodestorage", "light");
+            window.localStorage.setItem("omnibaap_modestorage", "light");
             mode = "light";
             darkmode(mode);
         }else if(mode == "funky"){
         
-            if(window.localStorage.getItem("omnibaap_darkmodestorage") == "light"){
+            if(window.localStorage.getItem("omnibaap_modestorage") == "light"){
                 mode = "light";
-            }else if(window.localStorage.getItem("omnibaap_darkmodestorage") == "dark"){
+            }else if(window.localStorage.getItem("omnibaap_modestorage") == "dark"){
                 mode = "dark";
             }
             darkmode(mode);
@@ -253,9 +254,9 @@ $("#signature").on("click", function () {
 
     if(mode == "funky"){
         
-        if(window.localStorage.getItem("omnibaap_darkmodestorage") == "light"){
+        if(window.localStorage.getItem("omnibaap_modestorage") == "light"){
             mode = "light";
-        }else if(window.localStorage.getItem("omnibaap_darkmodestorage") == "dark"){
+        }else if(window.localStorage.getItem("omnibaap_modestorage") == "dark"){
             mode = "dark";
         }
         darkmode(mode);
@@ -378,7 +379,7 @@ function darkmode(naar) {
         $("#log").css("color", "rgb(70, 70, 70)");
         $("#gradient").css("background-image", "linear-gradient(to bottom, rgba(255,0,0,0), 40%, white)");
         $("#whiteblock").css("background-color", "white");
-        $("#button").attr("mode","white");
+        $("#button").attr("mode","light");
         $("header").attr("mode","");
         $("footer").attr("mode","");
 
